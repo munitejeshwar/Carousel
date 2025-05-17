@@ -40,7 +40,6 @@ Clean up the interval when the component unmounts using clearInterval to prevent
 
 ## PROGRAM
 
-```
 ## App.jsx:
 ```
 import React, { useState } from 'react';
