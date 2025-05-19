@@ -46,7 +46,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 const images = [
-  '/im.jpeg','/aa.jpeg'
+  '/im.jpeg', '/aa.jpeg'
 ];
 
 function App() {
@@ -62,7 +62,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="title">Ro-Ko Carousel </h1>
+      <h1 className="title">Ro-Ko Carousel</h1>
       <div className="carousel">
         <img src={images[index]} alt="Ro-Ko" className="carousel-image" />
       </div>
@@ -70,56 +70,76 @@ function App() {
         <button onClick={showPrevious}>Previous</button>
         <button onClick={showNext}>Next</button>
       </div>
+      <footer className="footer">K Muni Tejeshwar 212223040102</footer>
     </div>
   );
 }
 
 export default App;
+
 ```
 ## App.css:
 ```
-.App {
+.app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin-top: 40px;
+  background-color: #f0f4f8;  /* light background color */
+  width: 600px;               /* set fixed width */
+  height: 600px;              /* set fixed height */
+  margin-left: auto;          /* center horizontally */
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel {
+  width: 500px;
+  height: auto;
+  margin: 0 auto; /* centers the carousel horizontally */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* centers the image if needed */
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* New footer style */
+.footer {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
 }
 
 ```
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/850c44b2-0e65-4863-9d77-4b4979251ff3)
-![image](https://github.com/user-attachments/assets/85b60c72-64b0-458d-a17d-000781d27079)
+![image](https://github.com/user-attachments/assets/6a7c114f-136c-4949-9877-eb0f7d35e3b3)
+![image](https://github.com/user-attachments/assets/6c173015-4b90-4a82-b6ef-f0dc66aad5f8)
 
 
 ## RESULT
